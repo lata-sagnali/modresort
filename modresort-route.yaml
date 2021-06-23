@@ -5,10 +5,6 @@ metadata:
     app: devchan-modresortchan-route
   name: modresorts
 spec: 
-  host: modresorts-default.10.0.0.15.nip.io
-  port: 
-    targetPort: 9080
-  subdomain: ""
   to: 
     kind: Service
     name: devchan-modresortchan-service
