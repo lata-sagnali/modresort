@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: devchan-modresortchan-service
+  labels:
+    app: modresortchan
+  spec:
+    type: NodePort
+    ports:
+      - port: 9080
+    selector:
+      app: modresortchan
+      release: modresort-devchan
+      tier: frontend
