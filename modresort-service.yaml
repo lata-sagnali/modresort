@@ -7,7 +7,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 9080
+    - nodePort: 31456
   selector:
       app: modresortchan
       release: modresort-devchan
