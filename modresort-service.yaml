@@ -5,9 +5,9 @@ metadata:
   labels:
     app: modresortchan
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
-  - port: 80
+  - port: 82
   selector:
       app: modresortchan
       release: modresort-devchan
